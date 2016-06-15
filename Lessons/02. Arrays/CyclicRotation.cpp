@@ -7,4 +7,4 @@ vector<int> solution(vector<int> &A, int K) {
         ret.push_back(A[(len - (c - i)) % len]);
     }
     return ret;
-}
+}   
