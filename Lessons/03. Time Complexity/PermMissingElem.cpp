@@ -7,5 +7,6 @@ int solution(vector<int> &A) {
         bList[A[i]] = true;
     }
     for(int i=1; i<100005; i++) if(!bList[i]) return i;
+    delete [] bList;
     return 0;
 }
