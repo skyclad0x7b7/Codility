@@ -17,6 +17,8 @@ int solution(int X, vector<int> &A) {
             if(++endCount == X) return i;
         }
     }
+
+    delete [] bList;
     return -1;
 }
 

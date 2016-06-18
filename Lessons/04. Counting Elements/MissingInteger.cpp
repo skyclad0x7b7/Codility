@@ -11,11 +11,10 @@ int solution(vector<int> &A) {
         }
     } 
     
-    if(A[0] != 1) return 1;
-    if(A.size() == 1) return 2;
+    if(A[c] != 1) return 1;
 
-    for(int i=1; i<A.size(); i++) {
-        if((A[i] - A[i-1]) > 1) return A[i]-1;
+    for(int i=c+1; i<A.size(); i++) {
+        if((A[i] - A[i-1]) > 1) return A[i-1]+1;
     }
     return A[A.size()-1]+1;
 }
