@@ -1,5 +1,5 @@
 int solution(vector<int> &A) {
-    int minAvg = 2147483647;
+    double minAvg = 2147483647;
     int curCount;
     int retIndex = 0;
     double sum = 0;
